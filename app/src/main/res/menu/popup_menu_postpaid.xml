@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="فاتورة مفرق" android:id="@+id/pop_post"/>
+    <item android:title="فاتورة جملة" android:id="@+id/pop_post_who"/>
+    <item android:title="فاتورة MTN ADSL" android:id="@+id/pop_post_adsl"/>
+
+</menu>

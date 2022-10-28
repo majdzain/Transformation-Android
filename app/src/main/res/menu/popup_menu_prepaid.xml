@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="وحدات مفرق" android:id="@+id/pop_pre"/>
+    <item android:title="وحدات جملة" android:id="@+id/pop_pre_who"/>
+
+
+</menu>

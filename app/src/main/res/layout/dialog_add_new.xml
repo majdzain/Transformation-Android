@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_txt_s"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="إضافة اسم جديد"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/dark_gray" />
+
+    <RelativeLayout
+        android:id="@+id/relative_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:background="@drawable/spinner_background_operation_"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleX="-1"
+            android:src="@mipmap/drop" />
+
+        <Spinner
+            android:id="@+id/spin_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/drop" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_border_blue"
+        android:gravity="center"
+        android:hint="الاسم"
+        android:inputType="text"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/spec_black"
+        android:textCursorDrawable="@drawable/edit_cursor_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_border_blue"
+        android:gravity="center"
+        android:hint="الرقم"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/spec_black"
+        android:textCursorDrawable="@drawable/edit_cursor_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_border_blue"
+        android:gravity="center"
+        android:hint="الكود(لزبائن الجملة)"
+        android:inputType="number"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/spec_black"
+        android:textCursorDrawable="@drawable/edit_cursor_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="حفظ"
+            android:textColor="@color/spec_black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:theme="@style/SaveButton" />
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:text="إلغاء"
+            android:textColor="@color/spec_black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:theme="@style/CancelButton" />
+    </LinearLayout>
+</LinearLayout>

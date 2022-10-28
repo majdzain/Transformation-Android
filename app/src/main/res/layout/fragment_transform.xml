@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_transform">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/setup_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="5"
+                    android:background="@color/trans_red"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:id="@+id/dialog_txt_s"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Syriatel"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/dark_gray" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_s"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_1_s"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="SIM 1"
+                            android:textColor="@color/orange"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/orange" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_2_s"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SIM 2"
+                            android:textColor="@color/green"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/green" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="5"
+                    android:background="@color/trans_yellow"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:id="@+id/dialog_txt_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="MTN"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/dark_gray" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_1_m"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SIM 1"
+                            android:textColor="@color/orange"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/orange" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_2_m"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="SIM 2"
+                            android:textColor="@color/green"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/green" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:weightSum="99">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="N = الرقم"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="M = المبلغ"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="C = الكود"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_red"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رموز وحدات Syriatel"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_pre_syr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_red"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_check_pre_syr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_red"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_red"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رموز فواتير Syriatel"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_post_syr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_red"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_check_post_syr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_red"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_red"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رمز جملة Syriatel"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_pre_post_who_syr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_red"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_yellow"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رموز وحدات MTN"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_pre_mtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_check_pre_mtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_yellow"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رموز فواتير MTN"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_post_mtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_yellow"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رمز جملة وحدات MTN"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_pre_who_mtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_yellow"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رمز جملة فواتير MTN"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_post_who_mtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_yellow"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رمز فواتير MTN ADSL"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_post_adsl_mtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/trans_blue"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="رمز التحقق من تصريح الموبايل"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/code_check_"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_border_black"
+                        android:digits="1234567890*#MNC"
+                        android:gravity="center"
+                        android:inputType="textCapCharacters"
+                        android:padding="1dp"
+                        android:singleLine="true"
+                        android:text="code"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_light_green"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="حفظ"
+                android:textColor="@color/blue"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:theme="@style/ExistVersionButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

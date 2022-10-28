@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/setup_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="5"
+                    android:background="@color/trans_red"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:id="@+id/dialog_txt_s"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Syriatel"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/dark_gray" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_s"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_1_s"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="SIM 1"
+                            android:textColor="@color/orange"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/orange" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_2_s"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SIM 2"
+                            android:textColor="@color/green"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/green" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="5"
+                    android:background="@color/trans_yellow"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:id="@+id/dialog_txt_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="MTN"
+                        android:textColor="@color/spec_black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/dark_gray" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_m"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_1_m"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SIM 1"
+                            android:textColor="@color/orange"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/orange" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/radio_sim_2_m"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="SIM 2"
+                            android:textColor="@color/green"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:buttonTint="@color/green" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/trans_red"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="رمز خط Syriatel السري"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/code_syriatel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_border_black"
+                    android:gravity="center"
+                    android:hint="12345"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:singleLine="false"
+                    android:textColor="@color/red"
+                    android:textCursorDrawable="@drawable/edit_cursor_red"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/trans_red"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="رمز خط الموزع Syriatel"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/code_syriatel_"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_border_black"
+                    android:gravity="center"
+                    android:hint="12345"
+                    android:inputType="number"
+                    
+                    android:padding="1dp"
+                    android:textColor="@color/red"
+                    android:textCursorDrawable="@drawable/edit_cursor_red"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/trans_yellow"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="رمز خط MTN السري"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/code_mtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_border_black"
+                    android:gravity="center"
+                    android:hint="12345"
+                    android:inputType="number"
+                    
+                    android:padding="1dp"
+                    android:textColor="@color/yellow"
+                    android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/trans_yellow"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="رمز خط MTN ADSL السري"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/code_adsl_mtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_border_black"
+                    android:gravity="center"
+                    android:hint="123456789"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:textColor="@color/yellow"
+                    android:textCursorDrawable="@drawable/edit_cursor_yellow"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:weightSum="10">
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="التالي"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:theme="@style/SaveButton" />
+
+                <Button
+                    android:id="@+id/btn_later"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="لاحقاً"
+                    android:textColor="@color/purple"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:theme="@style/SaveButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

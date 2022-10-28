@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dialog_txt_s"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="شراء وتفعيل التطبيق"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/dark_gray" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="- يتم تفعيل التطبيق بعد شراءه عن طريق طلب التفعيل واستلام أكواد التفعيل من المطور الخاص بالتطبيق ويتم حفظ التفعيل على SIM1 وعلى الجهاز."
+        android:textColor="@color/spec_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="- يمكن استخدام أكواد التفعيل على السيم نفسها في أي جهاز وضعت فيه أو استخدام الأكواد على الجهاز نفسه عند وضع أي سيم فيه, بحيث يمكن عند حذف التطبيق وإعادة تثبيته استخدام نفس الأكواد."
+        android:textColor="@color/spec_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="- ملف تفعيل النسخة القديمة يكون في مجلد Transform واسمه يكتب عليه تاريخ اليوم المحفوظ فيه بالإضافة إلى key.db"
+        android:textColor="@color/spec_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="يجب أن تكون متصل بالإنترنت عند طلب التفعيل"
+        android:textColor="@color/darker_red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_request"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="طلب التفعيل"
+        android:textColor="@color/orange"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:theme="@style/PrepaidButton" />
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_border_blue"
+        android:gravity="center"
+        android:hint="كود التفعيل الأول"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/spec_black"
+        android:textCursorDrawable="@drawable/edit_cursor_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_code_"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_border_blue"
+        android:gravity="center"
+        android:hint="كود التفعيل الثاني"
+        android:padding="5dp"
+        android:textColor="@color/spec_black"
+        android:textCursorDrawable="@drawable/edit_cursor_blue"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_exist_key"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="هل يوجد نسخة قديمة مفعلة؟"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:theme="@style/ExistVersionButton" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btn_enable"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:enabled="false"
+            android:text="تفعيل"
+            android:textColor="@color/black_overlay"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/SaveButton" />
+
+        <Button
+            android:id="@+id/btn_later"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:text="لاحقاً(نسخة تجريبية)"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:theme="@style/SaveButton" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Transform</string>
+    <string name="service_description">تسجل هذه الخدمة عمليات الإرسال المنبثقة التي يرسلها مشغل الهاتف المحمول الخاص بك ، وتقوم بحفظها في تطبيق Transform. انها آمنة تماما للاستخدام.</string>
+    <string-array name="debt_cash">
+        <item>نقدي</item>
+        <item>دين</item>
+    </string-array>
+    <string-array name="transformSpecial">
+        <item>وحدات MTN</item>
+        <item>وحدات Syriatel</item>
+        <item>فاتورة MTN</item>
+        <item>فاتورة Syriatel</item>
+        <item>فاتورة MTN ADSL</item>
+        <item>جملة وحدات/فواتير Syriatel</item>
+        <item>جملة وحدات MTN</item>
+        <item>جملة فواتير MTN</item>
+        <item>التحقق من تصريح الموبايل</item>
+    </string-array>
+</resources>

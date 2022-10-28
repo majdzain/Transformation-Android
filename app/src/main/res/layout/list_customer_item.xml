@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:layoutDirection="rtl"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2.5dp">
+
+    <LinearLayout
+        android:id="@+id/customers_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_syr_item_selector"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.5"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/customerName"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:text="Name"
+                    android:textColor="@color/spec_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/customerBalance"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="left"
+                    android:paddingEnd="5dp"
+                    android:singleLine="true"
+                    android:text="Balance"
+                    android:textColor="@color/spec_black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/customerNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:gravity="right"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:text="Number"
+                    android:textColor="@color/spec_black"
+                    android:textSize="17sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/customerAmount"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:paddingEnd="5dp"
+                    android:text="Amount"
+                    android:textColor="@color/spec_black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".BasicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relative_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_background_operation"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:scaleX="-1"
+                        android:src="@mipmap/drop" />
+
+                    <Spinner
+                        android:id="@+id/spin_operation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/drop" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linear_quick"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_quick_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="5"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="25">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9.5"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:paddingTop="1dp"
+                                    android:text="وحدات : "
+                                    android:textColor="@color/red"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:paddingTop="1dp"
+                                    android:text="فواتير : "
+                                    android:textColor="@color/red"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_pre_syr"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/spec_black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_post_syr"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/spec_black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/syriatel_img"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_weight="8.5"
+                                android:background="@color/white"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/syriatel_logo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="5"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="25">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="9.5"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="1dp"
+                                    android:text="وحدات : "
+                                    android:textColor="@color/blue"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingTop="1dp"
+                                    android:text="فواتير : "
+                                    android:textColor="@color/blue"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_pre_mtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/spec_black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_post_mtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="0"
+                                    android:textColor="@color/spec_black"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/mtn_img"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_weight="8.5"
+                                android:background="@color/white"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/mtn_logo" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/dark_gray" />
+
+                <com.transformation.zezoo.CustomAutoCompleteTextView
+                    android:id="@+id/edit_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_border_orange"
+                    android:gravity="center"
+                    android:hint="كود الزبون"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textColor="@color/spec_black"
+                    android:textCursorDrawable="@drawable/edit_cursor_purple"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:visibility="gone">
+
+                    <requestFocus />
+                </com.transformation.zezoo.CustomAutoCompleteTextView>
+
+                <com.transformation.zezoo.CustomAutoCompleteTextView
+                    android:id="@+id/edit_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit_border_purple"
+                    android:gravity="center"
+                    android:hint="رقم الموبايل أو الاسم"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|phone"
+                    android:maxLength="10"
+                    android:nextFocusForward="@id/edit_balance"
+                    android:padding="5dp"
+                    android:textColor="@color/spec_black"
+                    android:textCursorDrawable="@drawable/edit_cursor_purple"
+                    android:textSize="32sp"
+                    android:textStyle="bold"></com.transformation.zezoo.CustomAutoCompleteTextView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:id="@+id/edit_balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/edit_border_blue"
+                        android:gravity="center"
+                        android:hint="الرصيد"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:nextFocusForward="@id/edit_money"
+                        android:padding="5dp"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_blue"
+                        android:textSize="32sp"></EditText>
+
+                    <EditText
+                        android:id="@+id/edit_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/edit_border_green"
+                        android:gravity="center"
+                        android:hint="السعر"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:nextFocusForward="@id/btn_transform"
+                        android:padding="5dp"
+                        android:textColor="@color/spec_black"
+                        android:textCursorDrawable="@drawable/edit_cursor_green"
+                        android:textSize="32sp"></EditText>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/dark_gray" />
+
+                <LinearLayout
+                    android:id="@+id/linear_operation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="10">
+
+
+                    <Button
+                        android:id="@+id/btn_transform"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.9"
+                        android:text="تحويل"
+                        android:textColor="@color/light_green"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:theme="@style/PostpaidButton" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/gray" />
+
+                    <Button
+                        android:id="@+id/btn_check"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.9"
+                        android:text="فحص الرصيد"
+                        android:textColor="@color/orange"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:theme="@style/PrepaidButton" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_quick_"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/btn_prepaid"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.9"
+                        android:text="وحدات"
+                        android:textColor="@color/orange"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:theme="@style/PrepaidButton" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@color/gray" />
+
+                    <Button
+                        android:id="@+id/btn_postpay"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.9"
+                        android:text="فاتورة"
+                        android:textColor="@color/light_green"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:theme="@style/PostpaidButton" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/dark_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/edit_repet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:layout_weight="33"
+                        android:background="@drawable/edit_border_red"
+                        android:digits="123456789"
+                        android:gravity="center"
+                        android:hint="عدد المرات"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:padding="5dp"
+                        android:textCursorDrawable="@drawable/edit_cursor_red"
+                        android:textSize="18sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:layout_weight="36"
+                        android:background="@drawable/spinner_background"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spin_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/drop" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/save_number"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="31"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:theme="@style/SaveButton">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="4dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/ic_addcus" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:gravity="right"
+                            android:singleLine="false"
+                            android:text="جهة اتصال"
+                            android:textColor="@color/spec_black"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/dark_gray" />
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.transformation.zezoo.MovableFloatingActionButton
+        android:id="@+id/fab_bal_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/balance_info"
+        app:backgroundTint="@color/blue"
+        app:fab_size="normal"
+        app:rippleColor="@null" />
+</RelativeLayout>

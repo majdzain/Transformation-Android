@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="رصيد MTN" android:id="@+id/pop_bal_mtn"/>
+    <item android:title="رصيد وحدات Syriatel" android:id="@+id/pop_pre_bal_syr"/>
+    <item android:title="رصيد فواتير Syriatel" android:id="@+id/pop_post_bal_syr"/>
+</menu>

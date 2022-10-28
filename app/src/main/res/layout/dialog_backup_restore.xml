@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_txt_s"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="النسخ الاحتياطي والإستعادة"
+            android:textColor="@color/darker_red"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/dark_gray" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="- يساعد النسخ الاحتياطي للبيانات على حفظ سجلات التحويل والأسماء المحفوظة حتى يمكن استعادتها عند حذف التطبيق أو تلف الجهاز."
+            android:textColor="@color/spec_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="- يتم حفظ البيانات تلقائياً في ذاكرة الهاتف في كل تحويل جديد وحفظ اسم جديد."
+            android:textColor="@color/spec_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="- عند الإستعادة تكون ملفات النسخ الاحتياطي في مجلد اسمه Transform ويتم كتابة التاريخ في اسم النسخة الاحتياطية يتبعه نوع النسخة."
+            android:textColor="@color/spec_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="- النسخة الاحتياطية للسجلات يكون نوعها transforms.db"
+            android:textColor="@color/spec_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="- النسخة الاحتياطية للأسماء المحفوظة يكون نوعها customers.db"
+            android:textColor="@color/spec_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="- النسخة الاحتياطية للصندوق والجرد والأرباح يكون نوعها balance.db"
+            android:textColor="@color/spec_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="سجلات التحويل"
+            android:textColor="@color/darker_blue"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_transform_backup"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="نسخ احتياطي"
+                android:textColor="@color/spec_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/TransformBackupButton" />
+
+            <Button
+                android:id="@+id/btn_transform_restore"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:singleLine="true"
+                android:text="استعادة"
+                android:textColor="@color/spec_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/TransformBackupButton" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="الأسماء المحفوظة"
+            android:textColor="@color/darker_green"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_customer_backup"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="نسخ احتياطي"
+                android:textColor="@color/spec_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/CustomerBackupButton" />
+
+            <Button
+                android:id="@+id/btn_customer_restore"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:singleLine="true"
+                android:text="استعادة"
+                android:textColor="@color/spec_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/CustomerBackupButton" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="الرصيد والصندوق والأرباح"
+            android:textColor="@color/darker_orange"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_balance_backup"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="نسخ احتياطي"
+                android:textColor="@color/spec_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/TypeButton" />
+
+            <Button
+                android:id="@+id/btn_balance_restore"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:singleLine="true"
+                android:text="استعادة"
+                android:textColor="@color/spec_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:theme="@style/TypeButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

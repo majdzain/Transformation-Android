@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:layoutDirection="locale"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:singleLine="true"
+    android:text="abcdefj"
+    android:textColor="@color/light_green"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:theme="@style/TypeButton">
+
+</TextView>
